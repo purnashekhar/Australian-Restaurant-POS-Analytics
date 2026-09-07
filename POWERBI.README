@@ -1,0 +1,25 @@
+## 📊 Dashboard & Power BI Specifications
+
+The interactive Power BI dashboard is located in the repository under [`docs/Australian_Restaurant_Analytics.pbix`](docs/Australian_Restaurant_Analytics.pbix).
+
+### Key Features & Dashboard Layout
+
+* **Executive KPI Banner:** Real-time tracking of **Total Revenue (AUD)**, **Total Orders**, **Average Order Value (AOV)**, and **Gross Margin %**.
+* **Peak Rush Windows (Staff Optimization):** Line chart analyzing hourly order volumes—pinpointing peak rush hours (**6:00 PM – 8:30 PM**) to help management optimize floor staff rostering.
+* **Channel Performance Split:** Donut chart analyzing sales across **Dine-in**, **Takeaway**, **UberEats**, and **DoorDash**.
+* **Menu Engineering Matrix:** Horizontal bar chart sorting **45+ menu items** by total gross profit contribution—identifying low-margin dishes to drive pricing adjustments.
+
+### Core DAX Measures
+
+```dax
+// 1. Total Revenue (AUD)
+Total Revenue AUD = SUM('transformed_restaurant_sales'[subtotal_aud])
+
+// 2. Total Orders
+Total Orders = DISTINCTCOUNT('transformed_restaurant_sales'[order_id])
+
+// 3. Average Order Value (AOV)
+Average Order Value = DIVIDE([Total Revenue AUD], [Total Orders], 0)
+
+// 4. Gross Margin %
+Gross Margin % = DIVIDE(SUM('transformed_restaurant_sales'[gross_profit_aud]), [Total Revenue AUD], 0)
