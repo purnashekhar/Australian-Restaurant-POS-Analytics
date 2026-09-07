@@ -1,0 +1,14 @@
+# Python environment & cache
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+
+# Power BI temporary files
+*.tmp
+*.pbix.lock
+
+# Operating system files
+.DS_Store
+Thumbs.db
