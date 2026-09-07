@@ -59,6 +59,9 @@ Execute sql/schema.sql to create tables and load data/processed/transformed_rest
 
 
 ---
+
+<img width="2048" height="1280" alt="image" src="https://github.com/user-attachments/assets/6ea73af6-5551-49e9-96e8-4d31504831d4" />
+
 ## 📊 Dashboard & Power BI Specifications
 
 The interactive Power BI dashboard is located in the repository under
@@ -86,7 +89,6 @@ Average Order Value = DIVIDE([Total Revenue AUD], [Total Orders], 0)
 Gross Margin % = DIVIDE(SUM('transformed_restaurant_sales'[gross_profit_aud]), [Total Revenue AUD], 0)
 
 
-<img width="2048" height="1280" alt="image" src="https://github.com/user-attachments/assets/f0f5757a-2c9a-4ed2-81f6-b47daf97ded7" />
 
 ### 💻 Command Line Setup Commands
 
