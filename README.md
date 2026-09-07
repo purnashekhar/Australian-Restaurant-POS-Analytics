@@ -61,7 +61,7 @@ Execute sql/schema.sql to create tables and load data/processed/transformed_rest
 ---
 ## 📊 Dashboard & Power BI Specifications
 
-The interactive Power BI dashboard is located in the repository under [`docs/Australian_Restaurant_Analytics.pbix`](docs/Australian_Restaurant_Analytics.pbix).
+The interactive Power BI dashboard is located in the repository under
 
 ### Key Features & Dashboard Layout
 
